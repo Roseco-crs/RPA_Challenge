@@ -1,0 +1,265 @@
+V 0.0.4
+T 2024-04-14T13:00:25.655+00:00
+ID 1|f6066626-fa5e-11ee-860d-104a7db7f3f4
+I "sys.platform=linux"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]"
+M a:"tasks.py"
+SR a|0.004
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.004
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.005
+M h:"PASS"
+ET h|e|0.006
+M j:"minimal_task"
+M k:"tasks"
+M l:"/home/crs/10Academy/rpa/rpaChallenge/rpaChallenge/tasks.py"
+M m:null
+P i:j|k|l|m|4
+ST i|0.006
+M n:"============================ "
+C f|n|0.007
+M o:"Running: "
+C f|o|0.007
+M p:"task_name"
+C p|j|0.007
+M q:" =============================\n"
+C f|q|0.007
+M r:"METHOD"
+SE i|r|0.008
+P s:j|k|l|e|5
+M t:"message"
+M u:"str"
+M v:"'Hello'"
+AS s|t|u|v|0.008
+P w:j|k|l|e|6
+M x:"'Hello World!'"
+AS w|t|u|x|0.008
+EE r|h|0.009
+C p|j|0.009
+M y:" status: "
+C f|y|0.009
+M z:"PASS\n"
+C f|z|0.009
+M A:"================================================================================\n"
+C f|A|0.009
+ET h|e|0.009
+M C:"Teardown tasks"
+M D:"teardown"
+P B:C|D|e|e|0
+ST B|0.01
+M E:"Process snapshot"
+SPS E|0.01
+M F:"System information:\nMemory: Total: 11.6 G, Available: 5.3 G, Used: 53.7 %\nCPUs: 4"
+P G:e|e|e|e|0
+L I|F|G|0|0.211
+M H:"Current Process: python3.10 (pid: 507784, status: running)\nCommand Line: /home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py\nStarted: 14:00:24\nParent pid: 507739\nResident Set Size: 33.5 M\nVirtual Memory Size: 183.3 M"
+L I|H|G|0|0.221
+M I:"OutputToPortThread|Thread ID: 126718127896128 (daemon)"
+STD I|0.222
+M J:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/threading.py"
+M K:"_bootstrap"
+M L:"self._bootstrap_inner()"
+TBE J|973|K|L
+M M:"self"
+M N:"Thread"
+M O:"<Thread(OutputToPortThread, started daemon 126718127896128)>"
+TBV M|N|O
+M P:"_bootstrap_inner"
+M Q:"self.run()"
+TBE J|1016|P|Q
+TBV M|N|O
+M R:"run"
+M S:"self._target(*self._args, **self._kwargs)"
+TBE J|953|R|S
+TBV M|N|O
+M T:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_log_output_setup.py"
+M U:"write_in_thread"
+M V:"msg = q.get()"
+TBE T|73|U|V
+M W:"msg"
+M X:"'ST B|0.006\\n'"
+TBV W|u|X
+M Y:"client_socket"
+M Z:"socket"
+M 0:"<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38328), raddr=('127.0.0.1', 43431)>"
+TBV Y|Z|0
+M 1:"log"
+M 2:"module"
+M 3:"<module 'robocorp.log' from '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py'>"
+TBV 1|2|3
+M 4:"port_in_env"
+M 5:"'43431'"
+TBV 4|u|5
+M 6:"q"
+M 7:"Queue"
+M 8:"<queue.Queue object at 0x733fde02e0b0>"
+TBV 6|7|8
+M 9:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/queue.py"
+M aa:"get"
+M ab:"self.not_empty.wait()"
+TBE 9|171|aa|ab
+TBV M|7|8
+M ac:"block"
+M ad:"bool"
+M ae:"True"
+TBV ac|ad|ae
+M af:"timeout"
+M ag:"NoneType"
+M ah:"None"
+TBV af|ag|ah
+M ai:"wait"
+M aj:"waiter.acquire()"
+TBE J|320|ai|aj
+M ak:"Condition"
+M al:"<Condition(<unlocked _thread.lock object at 0x733fdd598e40>, 1)>"
+TBV M|ak|al
+TBV af|ag|ah
+M am:"waiter"
+M an:"lock"
+M ao:"<locked _thread.lock object at 0x733fdd539340>"
+TBV am|an|ao
+M ap:"saved_state"
+TBV ap|ag|ah
+M aq:"gotit"
+M ar:"False"
+TBV aq|ad|ar
+ETD 0.223
+M as:"MainThread|Thread ID: 126718152447808 (non daemon)"
+STD as|0.223
+M at:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py"
+M au:"process_snapshot"
+M av:"robo_logger.process_snapshot()"
+TBE at|270|au|av
+M aw:"logger_instances"
+M ax:"dict"
+M ay:"{<robocorp.log._robo_logger._RoboLogger object at 0x733fde1f9660>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x733fde02dd20>: 1}"
+TBV aw|ax|ay
+M az:"robo_logger"
+M aA:"_RoboLogger"
+M aB:"<robocorp.log._robo_logger._RoboLogger object at 0x733fde1f9660>"
+TBV az|aA|aB
+M aC:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py"
+M aD:"new_func"
+M aE:"return func(self, *args, **kwargs)"
+TBE aC|20|aD|aE
+TBV M|aA|aB
+M aF:"args"
+M aG:"tuple"
+M aH:"()"
+TBV aF|aG|aH
+M aI:"kwargs"
+M aJ:"{}"
+TBV aI|ax|aJ
+M aK:"func"
+M aL:"function"
+M aM:"<function _RoboLogger.process_snapshot at 0x733fdd468820>"
+TBV aK|aL|aM
+M aN:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE aC|416|au|aN
+TBV M|aA|aB
+M aO:"hide_vars"
+TBV aO|ad|ar
+M aP:"/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py"
+M aQ:"self._dump_threads(hide_vars)"
+TBE aP|748|au|aQ
+TBV aO|ad|ar
+TBV 1|2|3
+M aR:"entry_id"
+M aS:"'ps_0'"
+TBV aR|u|aS
+M aT:"entry_type"
+M aU:"'process_snapshot'"
+TBV aT|u|aU
+M aV:"psutil"
+M aW:"<module 'psutil' from '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/psutil/__init__.py'>"
+TBV aV|2|aW
+M aX:"AccessDenied"
+M aY:"type"
+M aZ:"<class 'psutil.AccessDenied'>"
+TBV aX|aY|aZ
+M a0:"NoSuchProcess"
+M a1:"<class 'psutil.NoSuchProcess'>"
+TBV a0|aY|a1
+M a2:"ZombieProcess"
+M a3:"<class 'psutil.ZombieProcess'>"
+TBV a2|aY|a3
+M a4:"curr_process"
+M a5:"Process"
+M a6:"psutil.Process(pid=507784, name='python3.10', status='running', started='14:00:24')"
+TBV a4|a5|a6
+M a7:"log_info"
+M a8:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x733fdd312560>"
+TBV a7|aL|a8
+M a9:"memory_info"
+M ba:"'Total: 11.6 G, Available: 5.3 G, Used: 53.7 %'"
+TBV a9|u|ba
+M bb:"child_i"
+M bc:"int"
+M bd:"0"
+TBV bb|bc|bd
+M be:"child"
+TBV be|a5|a6
+M bf:"name"
+M bg:"'python3.10'"
+TBV bf|u|bg
+M bh:"status"
+M bi:"'running'"
+TBV bh|u|bi
+M bj:"create_time"
+M bk:"'14:00:24'"
+TBV bj|u|bk
+M bl:"ppid"
+M bm:"'507739'"
+TBV bl|u|bm
+M bn:"cmdline"
+M bo:"'/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py'"
+TBV bn|u|bo
+M bp:"rss"
+M bq:"'33.5 M'"
+TBV bp|u|bq
+M br:"vms"
+M bs:"'183.3 M'"
+TBV br|u|bs
+M bt:"proc_memory_info"
+M bu:"pmem"
+M bv:"pmem(rss=35160064, vms=192188416, shared=11927552, text=2121728, lib=0, data=40226816, dirty=0)"
+TBV bt|bu|bv
+M bw:"'Current Process: python3.10 (pid: 507784, status: running)\\nCommand Line: /home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/bin/python3.10 -m robocorp.tasks run tasks.py\\nStarted: 14:00:24\\nParent pid: 507739\\nResident Set Size: 33.5 M\\nVirtual Memory Size: 183.3 M'"
+TBV t|u|bw
+M bx:"_RoboOutputImpl"
+M by:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x733fde0064d0>"
+TBV M|bx|by
+M bz:"_dump_threads"
+M bA:"stack.append((f, f.f_lineno))"
+TBE aP|769|bz|bA
+TBV M|bx|by
+TBV aO|ad|ar
+M bB:"thread_id"
+M bC:"126718152447808"
+TBV bB|bc|bC
+M bD:"frame"
+M bE:"<frame at 0x733fdd4e4c40, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>"
+TBV bD|bD|bE
+M bF:"thread"
+M bG:"_MainThread"
+M bH:"<_MainThread(MainThread, started 126718152447808)>"
+TBV bF|bG|bH
+M bI:"title"
+M bJ:"'MainThread|Thread ID: 126718152447808 (non daemon)'"
+TBV bI|u|bJ
+M bK:"f"
+M bL:"<frame at 0x5dd087d9f7b0, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/tasks/_commands.py', line 480, code run>"
+TBV bK|bD|bL
+M bM:"stack"
+M bN:"list"
+M bO:"[(<frame at 0x733fdd4ca2b0, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x733fddd01040, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x733fdd4ed220, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x5dd087f7af70, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x733fdd4e4c40, file '/home/crs/.robocorp/holotree/92ccbba_b1f3c24_09529949/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV bM|bN|bO
+ETD 0.226
+EPS 0.226
+ET h|e|0.239
+ER h|0.239
